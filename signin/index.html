@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../signin/vendor/bootstrap/css/bootstrap.min.css">
+    <title>Sign In</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        html {
+            font-size: 18px;
+        }
+
+        h1 {
+            color: #6482AD;
+            text-align: center;
+            font-size: 4rem;
+            margin: 3rem;
+        }
+
+        input {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            border-radius: 20px;
+            border: #7FA1C3 2px solid;
+        }
+
+        label {
+            display: block;
+            color: #6482AD;
+            font-size: 1rem;
+        }
+
+        .error {
+            color: red;
+            margin-top: 5px;
+            font-size: 0.9em;
+        }
+
+        .signin {
+            background-color: #7FA1C3;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <main class="container w-50 mx-auto">
+
+        <img src="../SL-122222-54830-14.jpg" alt="Login" class="w-100 d-block mx-auto mt-5">
+
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Please enter your email..." required>
+        <div id="emailrgx" class="error"></div>
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" placeholder="Please enter your password..." required>
+        <div id="pasrgx" class="error"></div>
+
+        <button onclick="signIn()" class="signin mx-auto w-100 mt-4"><a style="text-decoration: none; color: white;"
+                href="../Dictionary/index.html">Sign In</a></button>
+        <div class="text-center mt-3">
+            <span class="text-center mt-5">Don't have an account? <a href="../signup/index.html">Sign Up</a></span>
+        </div>
+        <div class="message" id="message"></div>
+
+    </main>
+
+    <script src="../signin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../signin/vendor/bootstrap/js/popper.min.js"></script>
+    <script src="../signin/script.js"></script>
+
+
+</body>
+
+</html>

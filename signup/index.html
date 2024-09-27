@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../signup/vendor/bootstrap/css/bootstrap.min.css">
+    <title>Form Validation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        html {
+            font-size: 18px;
+        }
+
+        h1 {
+            color: #6482AD;
+            text-align: center;
+            font-size: 4rem;
+            margin: 3rem;
+        }
+
+        input {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            border-radius: 20px;
+            border: #7FA1C3 2px solid;
+        }
+
+        label {
+            display: block;
+            color: #6482AD;
+            font-size: 1rem;
+        }
+
+        .error {
+            color: red;
+            margin-top: 5px;
+            font-size: 0.9em;
+        }
+
+        .submit {
+            background-color: #7FA1C3;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <main class="container w-50 mx-auto">
+        <h1><b>Sign Up</b></h1>
+
+        <label for="fn">First Name:</label>
+        <input type="text" id="fn">
+        <span id="fnrgx" class="error"></span><br>
+
+        <label for="ln">Last Name:</label>
+        <input type="text" id="ln">
+        <div id="lnrgx" class="error"></div>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+        <div id="emailrgx" class="error"></div>
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass">
+        <div id="pasrgx" class="error"></div>
+
+        <label for="repass">Confirm Password:</label>
+        <input type="password" id="repass">
+        <div id="psc" class="error"></div>
+
+        <label for="no.">Phone Number:</label>
+        <input type="text" id="no.">
+        <div id="norgx" class="error"></div>
+
+
+        <button onclick="save()" class="submit mx-auto w-100 mt-4"><a style="text-decoration: none; color: white;"
+                href="dictionary/index.html">Sign Up</a></button>
+
+
+    </main>
+
+    <script src="../signup/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../signup/vendor/bootstrap/js/popper.min.js"></script>
+    <script src="../signup/script.js"></script>
+
+
+</body>
+
+</html>

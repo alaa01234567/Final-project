@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    background-color:#6482AD;
+}
+
+/*card*/
+.container {
+    background-color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 100px 80px;
+    border-radius: 10px;
+}
+
+/*search box*/
+.search-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-box input {
+    padding: 5px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-bottom: 4px solid #6482AD;
+    font-size: 20px;
+}
+
+.search-box button {
+    padding: 15px 0;
+    width: 25%;
+    background-color: #6482AD;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.search-box .close {
+    border: none;
+    outline: none;
+    opacity: 0.3;
+    background-color: transparent;
+    position: absolute;
+    top: 3%;
+    right: 22%;
+    cursor: pointer;
+    color: black;
+}
+
+/*word and its details*/
+.result {
+    position: relative;
+    display: none;
+}
+
+
+/*searched word and its sound*/
+.result .word {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.result h3 {
+    font-size: 2.5rem;
+    color: #6482AD;
+}
+
+.word button {
+    background-color: transparent;
+    color: #6482AD;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+/*part of speech and phonetics*/
+.result .details {
+    display: flex;
+    gap: 10px;
+    color: #7FA1C3;
+    font-size: 1rem;
+}
+
+
+/*meaning and example and synonyms and antonyms*/
+.result .word-meaning {
+    font-size: 1.5rem;
+}
+
+.result,
+.ex,
+.synonyms,
+.antonyms {
+    font-size: 1rem;
+    color: #7FA1C3;
+    margin: 0px;
+    padding: 0.5rem;
+}
+
+.word-example,
+.word-synonyms,
+.word-antonyms {
+    font-size: 20px;
+    border-left: 5px solid#7FA1C3;
+    padding-left: 15px;
+    background-color: #F5EDED ;
+    padding: 0.5rem;
+}
+
+/*error message*/
+.error {
+    margin-top: 10%;
+    text-align: center;
+}
